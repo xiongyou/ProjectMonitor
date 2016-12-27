@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="E:/1xy/学习/实验室/钟老师/lib/antlr-2.7.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/1xy/学习/实验室/钟老师/lib/asm.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/1xy/学习/实验室/钟老师/lib/cglib-2.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/1xy/学习/实验室/钟老师/lib/commons-collections-2.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/1xy/学习/实验室/钟老师/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/1xy/学习/实验室/钟老师/lib/dom4j-1.6.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/1xy/学习/实验室/钟老师/lib/ejb3-persistence.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/1xy/学习/实验室/钟老师/lib/hibernate3.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/1xy/学习/实验室/钟老师/lib/hibernate-annotations.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/1xy/学习/实验室/钟老师/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/1xy/学习/实验室/钟老师/lib/jta.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/1xy/学习/实验室/钟老师/lib/mysql-connector-java-5.0.5-bin.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
