@@ -26,6 +26,7 @@ public class TaskMonitor implements Runnable {
 			int i=0;//任务发布计数
 			// 2.任务监测(主要是任务超时处理)
 			// 2.1 取出处于执行状态的任务
+			System.out.println("服务器连接超时任务重新发布：");
 			List<TaskInfo> taskInfoList = taskMan.findTaskInfoByStatus(1);
 			for (TaskInfo taskInfo : taskInfoList) {
 				// 2.2判断任务下发时间+项目中任务执行的最大时间<=当前时间,且未到达最大超时次数
@@ -58,8 +59,9 @@ public class TaskMonitor implements Runnable {
 			}
 
 			// 3.页面访问超时处理
+			System.out.println("页面访问超时任务重新发布：");
 			TaskDataManage taskDataMan = new TaskDataManage();
-
+			
 			// 3.1 查询出未重新发布的TaskData中的taskInfoID
 			List<TaskData> taskDataList = taskDataMan.findTaskDataByIsRedistribute(0);// 查询未重新发布的任务
 			for (TaskData taskData : taskDataList) {
