@@ -25,6 +25,10 @@ public class ProjectTask {
 	private String URL;
 	
 	
+	/**
+	 * 项目任务列表中，任务的状态
+	 * 0：正常      1：移除     2：非农产品    3：
+	 */
 	@Column(name="_status")
 	private int status;
 

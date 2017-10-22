@@ -28,11 +28,17 @@ public class TaskManage {
 					+" where ProjectID="+projectId);
 		}
 		
+		/**
+		 * 批量插入任务
+		 * 从任务基本列表中插入到任务执行列表（包括项目与任务的优先级）
+		 * @param projectId
+		 * @return
+		 */
 		public int insertTaskInfoFromProjTask(int projectId){
 			return dao.excuteBySql("insert into taskinfo "
-					+"(URL,ProjectID,Website,Keyword,DataObj,Add_Task_Time,Project_Task_ID,productInnerId)"
+					+"(URL,ProjectID,Website,Keyword,DataObj,Add_Task_Time,Project_Task_ID,productInnerId,project_priority,task_priority)"
 					+" select _url,_project_id,_website,_keyword,_dataobj,'"+ new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date())
-					+"',_project_task_id,_product_inner_id from _crawler_project_task where _status=0 and _project_id="+projectId);
+					+"',_project_task_id,_product_inner_id,_project_priority,_task_priority from _crawler_project_task where _status=0 and _project_id="+projectId+ " ORDER BY RAND()");
 		}
 		
 		
